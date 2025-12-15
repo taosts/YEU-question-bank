@@ -1830,7 +1830,1221 @@
       "“闯关东”",
       "旅蒙行商"
     ]
+  },
+  "数据库系统(DBS)的核心组成部分是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "数据库管理系统(DBMS)"
+    ]
+  },
+  "SQL中创建基本表的命令是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "CREATE TABLE"
+    ]
+  },
+  "关系完整性约束中，保证主码属性值唯一且非空的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "实体完整性"
+    ]
+  },
+  "数据管理技术发展的三个阶段中，数据独立性最高的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "数据库管理阶段"
+    ]
+  },
+  "关系代数中，选择运算的符号是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "σ"
+    ]
+  },
+  "下列关于数据库物理独立性的描述，正确的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "数据存储结构变化不影响应用程序"
+    ]
+  },
+  "SQL中，用于筛选分组后结果的子句是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "HAVING"
+    ]
+  },
+  "下列连接类型中，会保留左表所有元组且右表不匹配字段显示为 NULL 的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "左外连接"
+    ]
+  },
+  "关系模式R(学号，姓名，性别，年龄)中，主键是“学号”，则下列违反实体完整性的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "学号为“004”的记录学号为空"
+    ]
+  },
+  "下列SQL语句中，能正确插入单条记录到“学生”表(学号，姓名，性别)的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "INSERT INTO 学生 VALUES('005'，' 孙七 '，' 女 ')"
+    ]
+  },
+  "数据库(DB)是长期存储在计算机内、有组织、可共享的数据集合。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "投影运算(π)的作用是筛选指定属性列，选择运算(σ)的作用是筛选满足条件的元组。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "SQL的SELECT *语句用于查询表中所有属性列的数据。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "实体完整性规则要求关系中的主码属性值不能为NULL，也不能重复。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "视图是基于原表创建的虚拟表，不存储实际数据。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "数据库的逻辑独立性是指数据存储结构变化时，应用程序无需修改。( )": {
+    "type": "judgment",
+    "answer": false
+  },
+  "SQL中UNION操作符会去除重复记录，UNION ALL会保留重复记录，且UNION ALL执行效率更高。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "外码的取值只能是被参照关系主码的有效值，不能为NULL。( )": {
+    "type": "judgment",
+    "answer": false
+  },
+  "SQL中创建基本表时，PRIMARY KEY约束可以同时定义在多个属性上，形成复合主键。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "关系代数中，连接运算的结果元组个数一定大于等于参与运算的两个关系的元组个数。( )": {
+    "type": "judgment",
+    "answer": false
+  },
+  "数据库管理系统的英文缩写是____，数据库系统的英文缩写是____。": {
+    "type": "fillblank",
+    "answer": [
+      "DBMS",
+      "DBS"
+    ]
+  },
+  "数据管理技术发展经历了人工管理、____和____三个阶段。": {
+    "type": "fillblank",
+    "answer": [
+      "文件管理",
+      "数据库管理"
+    ]
+  },
+  "关系的完整性约束包括实体完整性、____和____三类。": {
+    "type": "fillblank",
+    "answer": [
+      "参照完整性",
+      "用户定义的完整性"
+    ]
+  },
+  "SQL中创建数据库的命令是____，删除数据库的命令是____。": {
+    "type": "fillblank",
+    "answer": [
+      "CREATE DATABASE",
+      "DROP DATABASE"
+    ]
+  },
+  "关系代数中，投影运算的符号是____，选择运算的符号是____。": {
+    "type": "fillblank",
+    "answer": [
+      "π",
+      "σ"
+    ]
+  },
+  "数据库系统的两级映射包括外模式-模式映射和____映射，其中____映射保证了数据的逻辑独立性。": {
+    "type": "fillblank",
+    "answer": [
+      "模式-内模式",
+      "外模式-模式"
+    ]
+  },
+  "SQL中，修改表中已有数据的命令是____，删除表中所有数据但保留表结构的命令是____。": {
+    "type": "fillblank",
+    "answer": [
+      "UPDATE",
+      "DELETE FROM表名(或TRUNCATE TABLE)"
+    ]
+  },
+  "外码是引用其他关系____的属性或属性组，其取值需遵循____完整性规则。": {
+    "type": "fillblank",
+    "answer": [
+      "主码(或主键)",
+      "参照"
+    ]
+  },
+  "SQL查询语句中，____子句用于按指定属性分组，____子句用于筛选分组后的结果。": {
+    "type": "fillblank",
+    "answer": [
+      "GROUP BY",
+      "HAVING"
+    ]
+  },
+  "关系代数中，传统集合运算包括并、交、差和____，专门的关系运算包括选择、投影、连接和____。": {
+    "type": "fillblank",
+    "answer": [
+      "笛卡尔积",
+      "除运算"
+    ]
+  },
+  "数据库系统的组成部分包括( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "数据",
+      "数据库(DB)",
+      "数据库管理系统(DBMS)",
+      "应用程序",
+      "数据库管理员(DBA)"
+    ]
+  },
+  "关系的完整性约束类型有( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "实体完整性",
+      "参照完整性",
+      "用户定义的完整性"
+    ]
+  },
+  "SQL中创建基本表时，常用的完整性约束有( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "PRIMARY KEY",
+      "UNIQUE",
+      "NOT NULL",
+      "FOREIGN KEY",
+      "DEFAULT"
+    ]
+  },
+  "专门的关系运算包括( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "选择运算",
+      "投影运算",
+      "连接运算",
+      "除运算"
+    ]
+  },
+  "数据库系统的三级模式结构包括( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "外模式",
+      "模式",
+      "内模式"
+    ]
+  },
+  "下列关于外码的描述，正确的有( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "外码引用另一关系的主码",
+      "外码可以是单个属性或属性组",
+      "外码与被参照关系的主码必须数据类型一致",
+      "外码值可为 NULL(若属性允许)"
+    ]
+  },
+  "下列SQL命令中，属于数据定义语言(DDL)的有( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "CREATE DATABASE",
+      "ALTER TABLE",
+      "CREATE VIEW",
+      "DROP INDEX"
+    ]
+  },
+  "下列关于视图的描述，正确的有( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "视图是虚拟表，不存储实际数据",
+      "视图可简化复杂查询逻辑",
+      "视图可限制用户访问的数据范围",
+      "原表数据变化会同步影响视图查询结果"
+    ]
+  },
+  "传统集合运算中，要求参与运算的两个关系满足“同构”条件的有( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "并运算",
+      "交运算",
+      "差运算"
+    ]
+  },
+  "下列关于SQL中DELETE和TRUNCATE命令的区别，正确的有( )": {
+    "type": "choice",
+    "isMultiple": true,
+    "answer": [
+      "DELETE可删除指定条件的数据，TRUNCATE只能清空全表数据",
+      "DELETE属于 DML命令，TRUNCATE属于DDL命令",
+      "DELETE可通过事务撤销，TRUNCATE不可撤销",
+      "DELETE执行效率低于TRUNCATE"
+    ]
+  },
+  "关系代数中，并运算(∪)要求参与运算的两个关系是同类关系，且运算结果会保留两个关系中的重复元组。( )": {
+    "type": "judgment",
+    "answer": false
+  },
+  "关系R(属性:A、B)和关系S(属性:B、C)的属性个数相同，因此可以直接进行交运算(∩)。( )": {
+    "type": "judgment",
+    "answer": false
+  },
+  "差运算(P-Q)的结果是“属于P或不属于Q”的元组集合，与Q-P的结果完全相同。( )": {
+    "type": "judgment",
+    "answer": false
+  },
+  "若关系X有3个属性、关系Y有2个属性，则X与Y的笛卡尔积(X×Y)有5个属性。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "若关系M有4个元组，关系N有3个元组，则M×N的元组个数一定是12个。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "自然连接(⨯)的核心是基于两个关系的“公共属性” 进行元组匹配，若两个关系无公共属性，则无法进行自然连接。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "自然连接是特殊的等值连接，本质是在笛卡尔积的基础上筛选“公共属性值相等”的元组，并去除重复属性。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "关系P和Q是同类关系(均为3个属性)，则P-Q的结果仍为3个属性，与原关系属性一致。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "设关系A有5个元组，关系B有3个元组，且A和B有2个重复元组，则A∪B的结果有6个元组。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "交运算(P∩Q)的结果一定是并运算(P∪Q)结果的子集。( )": {
+    "type": "judgment",
+    "answer": true
+  },
+  "下面不是关系数据模型的性质的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "关系模型的查询效率比非关系模型高"
+    ]
+  },
+  "关系模型中，一个关键字是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "由一个或多个其值能唯一标识该模式中任何元组的属性组成"
+    ]
+  },
+  "关于关系模型，下列说法不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "一个列的值可以来自不同的域"
+    ]
+  },
+  "关系操作中，操作的对象和结果都是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "集合"
+    ]
+  },
+  "下列说法正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "候选码都可以唯一标识一个元组"
+    ]
+  },
+  "员工表中包含“性别”属性，要求这个属性的值只能取“男”或“女”，这属于( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "用户自定义完整性"
+    ]
+  },
+  "五种基本关系代数运算是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "∪,-,×,π和σ"
+    ]
+  },
+  "在关系数据库中，通过( )来表示概念记录之间的关系。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "外部关键字"
+    ]
+  },
+  "若集合D1={0,1,2}、集合D2={a,b,c}、集合D3={a,c}，则D1×D2×D3应为( )元组。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "3"
+    ]
+  },
+  "若集合D1={0,1,2}、集合D2={a,b,c}、集合D3={a,c}，则D1×D2×D3结果集的元组个数为( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "18"
+    ]
+  },
+  "集合R与S的交可以用关系代数的基本运算表示为( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "R-(R-S)"
+    ]
+  },
+  "对关系的描述不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "关系可以嵌套定义"
+    ]
+  },
+  "如果某个属性包含在候选键中，则它称为( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "主属性"
+    ]
+  },
+  "如果一个系统定义为关系系统,则它必须( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "支持关系数据库和支持选择、投影和连接运算"
+    ]
+  },
+  "设有关系WORK(ENO,CNO,PAY)，主码为(ENO,CNO)。按照实体完整性规则，有( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "ENO与CNO都不能取空值"
+    ]
+  },
+  "下面关于自然连接和等值连接的叙述中，不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "两种连接都可以只用笛卡尔积和选择运算导出"
+    ]
+  },
+  "当关系R和S做自然连接时，能够把R和S原该舍弃的元组放到结果关系中的操作是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "外连接"
+    ]
+  },
+  "自然连接是构成新关系的有效方法。一般情况下，当对关系R和S使用自然连接时，要求R和S含有一个或多个共有的( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "属性"
+    ]
+  },
+  "已知关系R与关系S只有一个公共属性，T1是R与S做θ连接的结果，T2是R与S自然连接的结果，则下列说法正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "T1的属性个数大于T2的属性个数"
+    ]
+  },
+  "表达“从一个关系的所有行中提取出满足某些条件的行”，“从所有列中提取出某些列”，“属于一个关系但不属于另一关系的所有元组”，“两个关系必须按照某种条件串接成一个较大的关系”，依次是( ):1、并;2、交;3、积;4、选择;5、投影;6、差;7、连接。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "4567"
+    ]
+  },
+  "下列说法正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "R×S与S×R运算的结果是同一个关系"
+    ]
+  },
+  "数据模型是数据库系统的核心和基础。": {
+    "type": "judgment",
+    "answer": true
+  },
+  "数据库系统与文件系统的本质区别是:前者实现了整体数据的结构化。": {
+    "type": "judgment",
+    "answer": true
+  },
+  "数据冗余可能导致的问题有浪费存储空间、修改复杂和潜在的数据不一致性。": {
+    "type": "judgment",
+    "answer": true
+  },
+  "数据与其语义密不可分。": {
+    "type": "judgment",
+    "answer": true
+  },
+  "DBMS(数据库管理系统)是一个应用软件。": {
+    "type": "judgment",
+    "answer": false
+  },
+  "在数据模型的组成要素中，数据结构是刻画一个数据模型性质最重要的方面，人们通常按照数据结构的类型来命名数据模型。": {
+    "type": "judgment",
+    "answer": true
+  },
+  "层次模型是比网状模型更具普遍性的结构，网状模型是层次模型的一个特例。": {
+    "type": "judgment",
+    "answer": false
+  },
+  "以图的结构来描述实体及实体之间联系的模型是网状模型。": {
+    "type": "judgment",
+    "answer": true
+  },
+  "用二维表来表示数据及其联系的数据模型称为关系模型。": {
+    "type": "judgment",
+    "answer": true
+  },
+  "数据冗余和数据共享相互对应，冗余度低，共享性就差。": {
+    "type": "judgment",
+    "answer": false
+  },
+  "下列关于SQL的叙述中,正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SQL是关系数据库的通用查询语言"
+    ]
+  },
+  "在SQL语言按功能的分类中,不包括( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "DLL"
+    ]
+  },
+  "按功能对SQL语言分类,对各种数据库对象(非数据)进行创建、删除、修改的操作属于( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "DDL"
+    ]
+  },
+  "下列关于MySQL的叙述中,正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "MySQL能够运行于多种操作系统平台"
+    ]
+  },
+  "MySQL服务器使用TCP/IP网络的默认端口号是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "3306"
+    ]
+  },
+  "在安装和配置MySQL实例的向导中，选择决策支持型【OLAP】实例或者联机事务处理【OLTP】型实例的主要区别在于( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "并发连接数不同"
+    ]
+  },
+  "常用的MySQL图形化管理工具不包括( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "mysqldump"
+    ]
+  },
+  "使用MySQL时，可以在MySQL客户端中执行SQL语句，但下面无法用于执行SQL语句的客户端工具是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "mysqld"
+    ]
+  },
+  "在MySQL中,可支持事务、外键的常用数据库引擎是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "InnoDB"
+    ]
+  },
+  "在MySQL中，MyISAM格式的数据表所对应的存储文件不包括( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "ISD文件"
+    ]
+  },
+  "当MySQL服务器正确安装配置完毕之后，会在MySQL的主目录下生成一个MySQL启动时自动加载的选项文件，该选项文件是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "my.ini"
+    ]
+  },
+  "现有如下命令:mysql–u root–puser以下关于上述命令的叙述中，错误的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "没有写明主机地址,命令执行有误"
+    ]
+  },
+  "指定一个数据库为当前数据库的SQL语句语法格式是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "USE db_name;"
+    ]
+  },
+  "下列关于MySQL数据库的叙述中，错误的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "执行ATLER DATABASE语句更改参数时,不影响数据库中现有对象"
+    ]
+  },
+  "在MySQL中，可用于创建一个新数据库的SQL语句为( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "CREATE DATABASE"
+    ]
+  },
+  "当使用CREATE DATABASE命令在MySQL中创建数据库时，为避免因数据库同名而出现的错误，通常可在该命令中加入( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "IF NOT EXISTS"
+    ]
+  },
+  "在MySQL中，查看所有数据库列表的语句是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SHOW DATABASES;"
+    ]
+  },
+  "在MySQL数据库中，可以在服务器、数据库、表等级别上指定缺省字符集，而这些字符集的设定将作用于( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "CHAR、VARCHAR、TEXT等字符类型的字段"
+    ]
+  },
+  "在MySQL中,下列有关CHAR和VARCHAR的比较中,不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "CHAR和VARCHAR的最大长度都是255"
+    ]
+  },
+  "在CREATE TABLE语句中，用来指定外键的关键字是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "FOREIGN KEY"
+    ]
+  },
+  "在MySQL中，关键字AUTO_INCREMENT用于为列设置自增属性，能够设置该属性的数据类型是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "整型"
+    ]
+  },
+  "下列关于PRIMARY KEY和UNIQUE的描述中，错误的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "两者都要求属性值唯一,故两者的作用完全一样"
+    ]
+  },
+  "执行如下创建表的SQL语句时出现错误。需要修改的命令行是( )。\nCREATETABLEtb_test(\nSno CHAR(10) AUTO_INCREMENT,\nSname VARCHAR(20) NOT NULL,\nSex CHAR(1),\nScome DATE,\nPRIMARY KEY(Sno),\nENGINE=InnoDB );": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "第2行和第7行"
+    ]
+  },
+  "部门表tb_dept的定义如下:\nCREATE TABLE tb_dept(\ndeptno CHAR(2) primary key,\ndname CHAR(20) not null,\nmanager CHAR(12),\ntelephone CHAR(15)\n);\n下列说法正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "deptno的取值不允许为空，不允许重复"
+    ]
+  },
+  "对于日期\"2013年10月21日”，MySQL默认显示的格式是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "‘2013-10-21’"
+    ]
+  },
+  "下列关于空值的描述中，正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "空值表示无意义或不确定"
+    ]
+  },
+  "MySQL中，在使用ALTER TABLE修改表结构时，关于CHANGE和MODIFY两子句的描述中，不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "MODIFY可用于修改某个列的名称"
+    ]
+  },
+  "要求在已建立的tb_booking表中增加一个名为handler的字符类型字段，以下能实现上述功能的语句是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "ALTER TABLE tb_booking ADD COLUMN handler CHAR(10) NULL;"
+    ]
+  },
+  "要将员工表tb_emp中的年龄字段age更名为出生年份birth(数据类型为年份，字段名birth),下列语句中正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "ALTER TABLE tb_emp CHANGE COLUMN age birth YEAR(4);"
+    ]
+  },
+  "定义学生表时，若规定年龄字段取值不得超过30岁，应该使用的约束是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "用户定义完整性约束"
+    ]
+  },
+  "要消除查询结果集中的重复值，可在SELECT语句中使用关键字( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "DISTINCT"
+    ]
+  },
+  "在MySQL的SQL语句中，要实现类似分页功能的效果，可使用( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "LIMIT"
+    ]
+  },
+  "设WHERE子句中的条件表达式是:num BETWEEN 20 and 30，其含义是:num的值是20到30范围内的所有整数，且( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "包含20和30"
+    ]
+  },
+  "在SQL语句中，与表达式sno NOT IN(\"s1\"，\"s2\")功能相同的表达式是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "sno!=\"s1\" AND sno!=\"s2\""
+    ]
+  },
+  "设职工表tb_employee，包含字段eno(职工号)、ename(姓名)、age(年龄)、salary(工资)和dept(所在部门)，要查询工资在4000-5000之间(包含4000、5000)的职工号和姓名，正确的WHERE条件表达式是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "salary BETWEEN 4000 AND 5000"
+    ]
+  },
+  "SQL语句中，判断字段sno是否为空值时，应该使用的表达式是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "sno IS NULL"
+    ]
+  },
+  "MySQL所支持的字符串匹配中，下列通常使用的通配符包括( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "%"
+    ]
+  },
+  "查找学生表student中姓名的第二个字为“t”的学生学号sno和姓名sname，下面SQL语句正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SELECT sno, sname FROM student WHERE sname LIKE '_t%'"
+    ]
+  },
+  "与查询语句:SELECT ename,dept FROM tb_employee WHERE dept LIKE '%Sa+_b%' ESCAPE '+'; 中LIKE子句相匹配的字符串是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "Sa_bJ"
+    ]
+  },
+  "语句“SELECT * FROM tb_emp ORDER BY age DESC LIMIT 1,3”执行后返回的记录是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "按age降序排序为2、3、4的三条记录"
+    ]
+  },
+  "设有学生表student(sno,sname,sage,smajor)，字段含义分别为学生学号、姓名、年龄、专业。现有语句:\nSELECT sno,sname,sage, smajor\nFROM student\nORDER BY smajor, sage DESC\n执行上述语句，其检索结果( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "按smajor升序、sage降序排列"
+    ]
+  },
+  "统计表中所有记录个数的聚集函数是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "COUNT"
+    ]
+  },
+  "在下列有关GROUP BY语句的描述中，不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "可以使用WHERE子句对所得的分组进行筛选"
+    ]
+  },
+  "设有学生选课表score(sno,cname,grade)，其中sno表示学生学号，cname表示课程名，grade表示成绩。以下能够统计每个学生选课数的语句是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SELECT COUNT(*) FROM score GROUP BY sno"
+    ]
+  },
+  "订单表tb_order包含用户信息uid和产品信息pid等属性列，以下语句能够返回至少被订购过三次的pid是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SELECT pid FROM tb_order GROUP BY pid HAVING COUNT(pid)>=3"
+    ]
+  },
+  "设有学生表student(sno,sname,sage,smajor)，各字段含义分别为学号、姓名、年龄、专业;学生选课表score(sno,cname,grade)，各字段含义分别为学生学号、课程名、成绩。若要检索“信息管理”专业、选修课程“DB”的学生学号、姓名及成绩，如下能实现该检索要求的语句是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SELECT s.sno,sname,grade FROM student s,score sc WHERE s.sno=sc.sno AND s.smajor='信息管理' AND cname='DB'"
+    ]
+  },
+  "在SQL语言中，子查询是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "嵌入到另一个查询语句之中的查询语句"
+    ]
+  },
+  "MySQL中，子查询中可以使用运算符ANY，它表示的意思是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "至少一个值满足条件"
+    ]
+  },
+  "对于SQL查询:SELECT * FROM tbl_name WHERE id=(SELECT id FROM tbl_name)，假设该表中包含id字段，那么该语句正确执行的条件是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "该表中记录数必须小于等于一条"
+    ]
+  },
+  "设有学生表student，包含的属性有学号sno、学生姓名sname、性别sex、年龄age、所在专业smajor下列语句正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SELECT sno,sname FROM student WHERE sex='M' Union SELECT sno,sname FROM student WHERE smajor ='CS'"
+    ]
+  },
+  "查询既学过002号课，又学过003号课的同学的学号，下列SQL语句不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "Select s_no From SC Where c_no='002' AND c_no='003'"
+    ]
+  },
+  "有一个学生表student，包含主键s_no(学生编号)、s_name(学生姓名)等字段。又有分数表SC，包含s_no(学生编号)、score(分数)等字段。已知student表中共有50个学生，有45人参加了考试(分数存在SC表中)，其中10人不及格。执行以下SQL语句，可返回()条记录。\nSELECT * FROM student WHERE s_no IN(SELECT s_no FROM sc WHERE score<60)": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "10"
+    ]
+  },
+  "有一个学生表student，包含主键s_no(学生编号)、s_name(学生姓名)等字段。又有分数表SC，包含s_no(学生编号)、score(分数)等字段。已知student表中共有50个学生，有45人参加了考试(分数存在SC表中)，其中10人不及格。执行以下SQL语句，可返回()条记录。\nSELECT * FROM student WHERE EXISTS(SELECT s_no FROM sc WHERE score<60)": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "50"
+    ]
+  },
+  "学生表student包含sname、sex、age三个属性列，其中age的默认值是20，执行SQL语句INSERT INTO student(sex,sname,age) VALUES('M','Lili',default);的结果是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "执行成功，sname， sex， age的值分别是Lili， M， 20"
+    ]
+  },
+  "在使用INSERT INTO插入记录时，对于AUTO_INCREMENT列，若需要使其值自动增长，则不能为其指定任何有效的取值。那么，下面填充方式中错误的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "填充数字1"
+    ]
+  },
+  "在MySQL中，要删除某个数据表中所有用户数据，不可以使用的命令是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "DROP"
+    ]
+  },
+  "使用UPDATE语句同时修改多个表，会同时修改表关联中满足限定条件的每个表，在这种修改中可以使用的子句是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "WHERE"
+    ]
+  },
+  "设关系数据库中一个表S的结构为:S(SN，CN，grade)，其中SN为学生名，CN为课程名，二者均为字符型;grade为成绩，数值型，取值范围0-100。若要更正王二的化学成绩为85分，则可用( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "UPDATE S SET grade=85 WHERE SN='王二' AND CN='化学'"
+    ]
+  },
+  "设有学生表student(sno，sname，sage，smajor)，各字段的含义分别是学生学号、姓名、年龄和专业。要求输入一学生记录，学号为100，姓名为张红，年龄为20。以下不能完成如上输入要求的语句是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "INSERT INTO student VALUES(100， '张红'，20)"
+    ]
+  },
+  "设关系数据库中一个表S的结构为S(SN，CN，grade)，其中SN为学生名，CN为课程名，二者均为字符型;grade为成绩，数值型，取值范围0-100。若要把“张二的化学成绩80分”插入S中，则可用( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "INSERT INTO S VALUES('张二'，'化学'，80)"
+    ]
+  },
+  "如果DELETE语句中没有使用WHERE子句，则下列叙述中正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "删除指定数据表中的全部记录"
+    ]
+  },
+  "下列关于DELETE、TRUNCATE和DROP命令的描述中，正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "三者都能够删除数据表中的数据"
+    ]
+  },
+  "DELETE语句中不能使用的子句是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "GROUP BY"
+    ]
+  },
+  "给定如下SQL语句:\nCREATE VIEW test.V_test\nAS\nSELECT * FROM\ntest.students\nWHERE age<19;": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "在test数据库的students表上建立一个名为V_test的视图"
+    ]
+  },
+  "下列关于MySQL基本表和视图的描述中，正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "能对基本表和视图进行更新操作，但对视图的更新操作是受限制的"
+    ]
+  },
+  "下列关于视图的叙述中，正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "使用视图，能够屏蔽数据库的复杂性"
+    ]
+  },
+  "设有学生表student，包含的属性有学号sno、学生姓名sname、性别sex、年龄age、所在专业smajor。基于student表建立视图，其中可更新的视图是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "CREATE VIEW V1 AS SELECT sno，sname FROM student"
+    ]
+  },
+  "下列有关视图的叙述中，正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "视图可以嵌套"
+    ]
+  },
+  "下列关于表和视图的叙述中错误的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "表和视图上都可以创建索引"
+    ]
+  },
+  "在视图上不能完成的操作是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "在视图上定义新的表"
+    ]
+  },
+  "SQL语言中，删除一个视图的命令是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "DROP"
+    ]
+  },
+  "在SQL语言中的视图VIEW是数据库的( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "外模式"
+    ]
+  },
+  "下列关于索引的叙述中，错误的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "索引能够提高数据表读写速度"
+    ]
+  },
+  "对于索引，正确的描述是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "索引通常可减少表扫描，从而提高检索的效率"
+    ]
+  },
+  "MySQL中，不能创建索引的语句是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "SHOW INDEX"
+    ]
+  },
+  "设有语句:CREATE UNIQUE INDEX idx ON books(id DESC);\n以下关于该语句的叙述中，错误的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "idx是要建立索引的数据表名"
+    ]
+  },
+  "执行语句:CREATE INDEX in_dept ON tb_dept(telephone(6) DESC);后，在tb_dept表的telephone属性上( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "根据telephone属性前六个字符采用BTREE索引类型创建索引"
+    ]
+  },
+  "下列不适合建立索引的属性是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "经常需要进行更新操作的属性"
+    ]
+  },
+  "如果关系模式设计的不好，会出现( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "数据冗余"
+    ]
+  },
+  "下列关于数据冗余的叙述中，不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "不应该在数据库中存储任何冗余数据"
+    ]
+  },
+  "由于关系模式设计不当所引起的插入异常指的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "由于码值的部分为空而不能将有用的信息作为一个元组插入到关系中"
+    ]
+  },
+  "由于关系模式设计不当所引起的删除异常指的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "不该删除的数据被删除"
+    ]
+  },
+  "在关系模式R中，函数依赖X→Y的语义是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "在R的一切可能关系中，若任意两个元组的X值相等，则Y值也相等"
+    ]
+  },
+  "X→Y，当下列哪一条成立时，称为平凡的函数依赖( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "Y∈X"
+    ]
+  },
+  "下列关于函数依赖的叙述中，错误的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "若A→BC，则A→B，B→C"
+    ]
+  },
+  "如果某个属性包含在候选键中，则它称为( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "主属性"
+    ]
+  },
+  "关系模型中将不含有多余属性的超键称为( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "候选键"
+    ]
+  },
+  "已知关系模式R(A，B，C，D，E)及其上的函数依赖集合F={A→D，B→C，E→A}，该关系模式的候选码是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "BE"
+    ]
+  },
+  "在最小依赖集F中，下面叙述不正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "F中每个FD的左部都是单属性"
+    ]
+  },
+  "消除了部分函数依赖的1NF的关系模式，必定是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "2NF"
+    ]
+  },
+  "设有关系模式R(S，D，M)，其函数依赖集:F={S→D，D→M}，则关系模式R的规范化程度最高达到( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "2NF"
+    ]
+  },
+  "如果关系模式R中的属性全是主属性，则R一定属于()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "3NF"
+    ]
+  },
+  "如果一个关系属于3NF，则它( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "必然属于2NF"
+    ]
+  },
+  "关系模式至少应属于( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "1NF"
+    ]
+  },
+  "设某关系模式R(A，B，C，D)，函数依赖{A→C，D→B}，则R最高满足( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "1NF"
+    ]
+  },
+  "规范化理论是关系数据库进行逻辑设计的理论依据，根据这个理论，关系数据库中的关系必须满足:每一个属性都是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "不可分解的"
+    ]
+  },
+  "关系模式R中的属性全是主属性，则R的最高范式必定是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "3NF"
+    ]
+  },
+  "给定关系模式R，U={A，B，C}，F={AB→C，C→B}。关系R( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "有2个候选关键字AC和AB"
+    ]
+  },
+  "给定关系模式R，U={A，B，C}，F={AB→C，C→B}。关系R有( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "0个非主属性和3个主属性"
+    ]
+  },
+  "设R是一个关系模式，F是R上的一个FD集，R分解成数据库模式ρ={R1，…，RK}。如果对R中满足F的每一个关系r，都有r=(r)⋈(r)⋈…⋈(r)，则称这个分解ρ是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "无损分解"
+    ]
+  },
+  "关系数据库的规范化理论主要解决的问题是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": [
+      "如何构造合适的数据逻辑结构"
+    ]
   }
 }
+
 
 
