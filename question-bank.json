@@ -3043,8 +3043,149 @@
     "answer": [
       "如何构造合适的数据逻辑结构"
     ]
+  },
+  "数据库逻辑设计时，应首先( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["把概念模型转化成逻辑模型"]
+  },
+  "ER图是表示概念模型的有效工具之一，在ER图中的菱形框表示( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["联系"]
+  },
+  "下列各种模型中不是数据模型的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["概念模型"]
+  },
+  "关于ER图，下列说法中错误的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["在ER图中，实体和属性的划分是绝对的、一成不变的"]
+  },
+  "在ER模型转换成关系模型的过程中，下列叙述不正确的是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["每个联系类型转换成一个关系模式"]
+  },
+  "在数据库设计中，超类实体与子类实体的关系是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["后者继承前者的所有属性"]
+  },
+  "综合局部ER图生成总体ER图的过程中，下列说法错误的是( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["在总体ER图中不可以删除任何实体间的联系"]
+  },
+  "E-R模型可以转换为关系模型，当一个M:N联系转换为关系模式时，该关系模式的关键字是( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["M端实体关键字与N端实体关键字的组合"]
+  },
+  "在一个ER图中，如果共有20个不同实体类型，在这些实体类型之间存在着9个不同的二元联系(二元联系是指两个实体之间的联系)其中3个是1:n联系，6个是m:n联系;还存在1个m:n的三元联系;那么根据ER模型转换为关系模型的规则，这个ER结构转换成的关系模型个数为( )": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["27"]
+  },
+  "确定系统边界和关系规范化分别在数据库设计的()阶段进行。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["需求分析和逻辑设计"]
+  },
+  "概念结构设计阶段完成的文档是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["E-R图"]
+  },
+  "设计关系模式时，派生属性不会作为关系中的属性来存储。员工(工号，姓名，性别，出生日期，年龄)关系中，派生属性是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["年龄"]
+  },
+  "在需求分析阶段，需求调查的内容是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["信息要求、处理要求、安全性与完整性要求"]
+  },
+  "在需求分析阶段，需求分析的结果是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["数据流图、数据字典"]
+  },
+  "设计E-R图的过程中，需要确定实体所具有的属性，这一抽象称为()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["聚集"]
+  },
+  "视图设计(子模式)属于数据库设计的()阶段。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["逻辑设计"]
+  },
+  "要实现记录的物理顺序与索引项次序一致，应选择的索引类型是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["聚簇索引"]
+  },
+  "确定系统边界属于数据库设计的()阶段。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["需求分析"]
+  },
+  "确定各基本表的索引，属于数据库设计()阶段。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["物理设计"]
+  },
+  "需求分析阶段，用于描述业务处理流程及各项业务处理所使用数据的图是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["数据流图"]
+  },
+  "关于E-R图合并，下列说法不正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["E-R图合并可以发现设计是否满足信息需求"]
+  },
+  "在数据库设计过程中，设计用户外模式属于()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["逻辑结构设计"]
+  },
+  "部门DEPT(Deptno，Name，Tel，Leader)和职工EMP(Empno，Name，Sex，Address，Deptno)实体集，若一个职工只能属于一个部门，部门负责人Leader是一个职工。下图中a、b处的实体名分别为()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["DEPT、EMP"]
+  },
+  "部门DEPT(Deptno，Name，Tel，Leader)和职工EMP(Empno，Name，Sex，Address，Deptno)实体集，若一个职工只能属于一个部门，部门负责人Leader是一个职工。关系DEPT和EMP的外码分别为()": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["Leader、Deptno"]
+  },
+  "有关概念结构设计，下列说法正确的是()。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["概念结构设计与具体DBMS无关"]
+  },
+  "在学校综合管理系统的设计阶段，教师实体在学籍管理子系统中被称为“教师”，而在人事管理子系统中被称为“职工”。这类冲突被称为( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["命名冲突"]
+  },
+  "在教学管理业务分ER图中，“教师”实体具有“主讲课程”属性，而在人事管理业务分ER图中，“教师”实体没有此属性，做分ER图合并时应做如下处理( )。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["合并后的“教师”实体具有两个分ER图中“教师”实体的全部属性"]
+  },
+  "视图设计属于数据库设计的()阶段。": {
+    "type": "choice",
+    "isMultiple": false,
+    "answer": ["逻辑设计"]
   }
 }
+
 
 
 
